@@ -28,7 +28,7 @@ class RecordSaver[K: ClassTag, V: ClassTag](options: Options) extends RecordProc
                        rdd: RDD[ConsumerRecord[K, V]]): Unit = {
     rdd.map { record =>
       val metadata = new RecordMetadata(
-        topicPartitionRanges(record.topic())(record.partition())._2,
+        topicPartitionRanges(record.topic())(record.partition())._1, // starting offset
         record.partition(),
         record.topic(),
         record.timestamp()
