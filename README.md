@@ -38,3 +38,4 @@ and write them to local files under `/tmp/datalake` directory every 10 seconds:
       --brokers localhost:9092 --topics events
       --path /tmp/datalake --group kafka-dumper
       --interval 10
+

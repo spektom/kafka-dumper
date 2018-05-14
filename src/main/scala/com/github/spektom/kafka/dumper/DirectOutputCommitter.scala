@@ -1,5 +1,3 @@
-package com.github.spektom.kafka.dumper
-
 /*
  * Copyright 2015 Databricks, Inc.
  *
@@ -15,6 +13,7 @@ package com.github.spektom.kafka.dumper
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package com.github.spektom.kafka.dumper
 
 import org.apache.hadoop.fs.Path
 import org.apache.hadoop.mapred._
